@@ -15,8 +15,14 @@ $(document).ready(function() {
     };
 
     $('.navbar-nav .nav-link').click(function(event) {
-        event.preventDefault();
         const target = $(this).attr('href');
+
+        // Only intercept in-page anchor links (e.g. #about).
+        if (!target || !target.startsWith('#')) {
+            return;
+        }
+
+        event.preventDefault();
         scrollToSection(target);
     });
 });
