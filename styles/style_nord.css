@@ -315,9 +315,9 @@ hr {
     }
 
     .blog-cta-btn {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
+        width: auto;
+        max-width: 100%;
+        padding: 0.68rem 1.3rem;
     }
 }
 
