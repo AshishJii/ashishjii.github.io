@@ -16,6 +16,7 @@ const GITHUB_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height
 const FOLDER_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`;
 const TROPHY_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="18" width="12" height="4"/></svg>`;
 const CERT_ICON     = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>`;
+const EYE_ICON      = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`;
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -128,7 +129,10 @@ function renderAwardCard(award, i) {
     <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${award.title}" loading="lazy">
-        ${hasLink ? `<div class="pf-card-links"><a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a></div>` : ''}
+        ${(image || hasLink) ? `<div class="pf-card-links">
+          ${image ? `<button class="pf-card-link pf-zoom-btn" data-image="${image}" aria-label="View Image" title="View Image">${EYE_ICON}</button>` : ''}
+          ${hasLink ? `<a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a>` : ''}
+        </div>` : ''}
       </div>
       <div class="pf-card-body">
         <h3 class="pf-card-title">${award.title}</h3>
@@ -150,7 +154,10 @@ function renderCertCard(cert, i) {
     <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${cert.name}" loading="lazy">
-        ${hasLink ? `<div class="pf-card-links"><a class="pf-card-link" href="${cert.url}" target="_blank" rel="noopener" title="View certificate">${EXTERNAL_ICON}</a></div>` : ''}
+        ${(image || hasLink) ? `<div class="pf-card-links">
+          ${image ? `<button class="pf-card-link pf-zoom-btn" data-image="${image}" aria-label="View Image" title="View Image">${EYE_ICON}</button>` : ''}
+          ${hasLink ? `<a class="pf-card-link" href="${cert.url}" target="_blank" rel="noopener" title="View certificate">${EXTERNAL_ICON}</a>` : ''}
+        </div>` : ''}
       </div>
       <div class="pf-card-body">
         <h3 class="pf-card-title" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
@@ -176,6 +183,35 @@ function showMoreButton(panelId, total) {
 // Featured items surface first within each panel, original order preserved otherwise.
 function byFeaturedFirst(items) {
   return [...items].sort((a, b) => (b.featured === true ? 1 : 0) - (a.featured === true ? 1 : 0));
+}
+
+function initImageModal(root) {
+  let modal = document.getElementById('image-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'image-modal';
+    modal.innerHTML = `
+      <div class="image-modal-overlay"></div>
+      <div class="image-modal-content">
+        <button class="image-modal-close" aria-label="Close modal">&times;</button>
+        <img src="" alt="Zoomed image" />
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    modal.querySelector('.image-modal-overlay').addEventListener('click', () => modal.classList.remove('active'));
+    modal.querySelector('.image-modal-close').addEventListener('click', () => modal.classList.remove('active'));
+  }
+
+  root.querySelectorAll('.pf-zoom-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.image;
+      if (src) {
+        modal.querySelector('img').src = src;
+        modal.classList.add('active');
+      }
+    });
+  });
 }
 
 function initTabs(root) {
@@ -268,4 +304,5 @@ export function renderPortfolio(data, container) {
 
   initTabs(container);
   initShowMore(container);
+  initImageModal(container);
 }

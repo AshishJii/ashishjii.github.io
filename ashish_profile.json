@@ -138,20 +138,10 @@
     ],
     "achievements": [
         {
-            "title": "ICPC Regionalist 2026 - Rank 204",
-            "date": "2026",
-            "awarder": "International Collegiate Programming Contest",
-            "summary": "Achieved rank 204 and was the institute topper.",
-            "url": "https://icpc.global/regionals/finder/2025-26",
-            "featured": true,
-            "image": "/images/achv/icpc.jpg"
-        },
-        {
             "title": "GATE 2026 - Rank 3536",
             "date": "2026",
             "awarder": "Graduate Aptitude Test in Engineering",
             "summary": "Secured All India Rank 3536 in GATE 2026.",
-            "url": "https://gate2026.iitr.ac.in/scorecard",
             "featured": true,
             "image": "/images/achv/gate.png"
         },
@@ -169,16 +159,23 @@
             "date": "2025-12",
             "awarder": "NPTEL",
             "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
-            "url": "https://nptel.ac.in/discipline-star",
+            "url": "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/NPTEL_Stars/NPTEL_DISCIPLINE_STARS/NPTELSS2250105012.jpg",
             "featured": true,
             "image": "/images/achv/nptel.jpg"
+        },
+        {
+            "title": "ICPC Regionalist 2026 - Rank 204",
+            "date": "2026",
+            "awarder": "International Collegiate Programming Contest",
+            "summary": "Achieved rank 204 and was the institute topper.",
+            "featured": true,
+            "image": "/images/achv/icpc.jpg"
         },
         {
             "title": "Winner",
             "date": "2024-11",
             "awarder": "Vultr Hackathon, HackCBS",
             "summary": "Won the Vultr Hackathon track at HackCBS.",
-            "url": "https://hackcbs.tech/winners",
             "featured": true,
             "image": "/images/achv/vultr.png"
         },
@@ -187,7 +184,6 @@
             "date": "2024-11",
             "awarder": "HackIITK Cybersecurity Hackathon",
             "summary": "Competed among 7000+ teams for blockchain based cybersecurity solutions.",
-            "url": "https://hackiitk.com/results",
             "featured": true,
             "image": "/images/achv/hackiitk.png"
         },
@@ -196,7 +192,7 @@
             "date": "2024-10",
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
-            "url": "https://psit.ac.in/events/hackathon-2024",
+            "url": "https://erp.psit.ac.in/Document/Verify/PSITKNP1802262A",
             "featured": true,
             "image": "/images/achv/PSIT3yrhack.jpg"
         },
@@ -205,7 +201,7 @@
             "date": "Ongoing",
             "awarder": "Chrome Web Store",
             "summary": "Successfully published and maintained extension.",
-            "url": "https://chrome.google.com/webstore/search/erpsense",
+            "url": "https://chromewebstore.google.com/detail/erpsense-psit/cemfoagomhonpemjnjehciigjieojfao",
             "featured": false,
             "image": "/images/achv/erpsense.png"
         },
@@ -214,7 +210,6 @@
             "date": "2024-11",
             "awarder": "TON Ideathon, HackCBS",
             "summary": "Finished as runner-up in the TON Ideathon at HackCBS.",
-            "url": "https://hackcbs.tech/results",
             "featured": false,
             "image": "/images/achv/hackcbs.png"
         },
@@ -223,7 +218,6 @@
             "date": "2023-07",
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 5000.",
-            "url": "https://psit.ac.in/events/hackathon-2023",
             "featured": false,
             "image": "/images/achv/PSIT1yrhack.jpg"
         },
@@ -232,7 +226,6 @@
             "date": "2023-06",
             "awarder": "Algo Club Hackathon 2.0",
             "summary": "Algorithmic problem-solving competition.",
-            "url": "",
             "featured": false,
             "image": "/images/achv/algoclub.jpg"
         },
@@ -241,16 +234,14 @@
             "date": "",
             "awarder": "LeetCode, CodeChef, HackerRank",
             "summary": "Across competitive programming and data structure platforms.",
-            "url": "https://leetcode.com/u/ashish-verma/",
             "featured": false,
-            "image": "https://picsum.photos/seed/solved-300-problems/600/340"
+            "image": "/images/achv/solved-300-problems.png"
         },
         {
             "title": "Google Arcade Champion",
             "date": "",
             "awarder": "Google",
             "summary": "Cloud skills",
-            "url": "",
             "featured": false,
             "image": "/images/achv/googleArcade.jpg"
         }
@@ -356,7 +347,6 @@
             "name": "NEP 2020 - Student Clubs and Quality Circles",
             "date": "2025-05",
             "issuer": "NITTTR Bhopal",
-            "url": "",
             "image": "/images/cert/NITTTR students club training.png",
             "featured": false
         },
@@ -364,7 +354,6 @@
             "name": "Innovation Ambassador [Advanced]",
             "date": "2024-12",
             "issuer": "MoE's Innovation Cell",
-            "url": "",
             "image": "/images/cert/MoE IA Training.png",
             "featured": false
         },
@@ -396,7 +385,6 @@
             "name": "Java Foundations Certification",
             "date": "",
             "issuer": "Infosys",
-            "url": "https://infosys.com/certificates/placeholder",
             "image": "/images/cert/Infosys Java.png",
             "featured": false
         },
