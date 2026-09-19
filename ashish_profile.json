@@ -132,6 +132,14 @@
     ],
     "achievements": [
         {
+            "title": "NPTEL Discipline Star",
+            "date": "2025-12",
+            "awarder": "NPTEL",
+            "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
+            "url": "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/NPTEL_Stars/NPTEL_DISCIPLINE_STARS/NPTELSS2250105012.jpg",
+            "image": "/images/achv/nptel.jpg"
+        },
+        {
             "title": "GATE 2026 - Rank 3536",
             "date": "2026",
             "awarder": "Graduate Aptitude Test in Engineering",
@@ -139,12 +147,28 @@
             "image": "/images/achv/gate.png"
         },
         {
-            "title": "NPTEL Discipline Star",
-            "date": "2025-12",
-            "awarder": "NPTEL",
-            "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
-            "url": "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/NPTEL_Stars/NPTEL_DISCIPLINE_STARS/NPTELSS2250105012.jpg",
-            "image": "/images/achv/nptel.jpg"
+            "title": "200+ Active Users, ErpSense Chrome Extension",
+            "date": "Ongoing",
+            "awarder": "Chrome Web Store",
+            "summary": "Successfully published and maintained extension.",
+            "url": "https://chromewebstore.google.com/detail/erpsense-psit/cemfoagomhonpemjnjehciigjieojfao",
+            "image": "/images/achv/erpsense.png"
+        },
+        {
+            "title": "Institute-level Hackathon Winner",
+            "date": "2024-10",
+            "awarder": "PSIT",
+            "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
+            "url": "https://erp.psit.ac.in/Document/Verify/PSITKNP1802262A",
+            "image": "/images/achv/PSIT3yrhack.jpg"
+        },
+
+        {
+            "title": "ICPC Regionalist 2026 - Rank 204",
+            "date": "2026",
+            "awarder": "International Collegiate Programming Contest",
+            "summary": "Achieved rank 204 and was the institute topper.",
+            "image": "/images/achv/icpc.jpg"
         },
         {
             "title": "Top 100 Finalist",
@@ -155,13 +179,6 @@
             "image": "/images/achv/adobe25.png"
         },
         {
-            "title": "ICPC Regionalist 2026 - Rank 204",
-            "date": "2026",
-            "awarder": "International Collegiate Programming Contest",
-            "summary": "Achieved rank 204 and was the institute topper.",
-            "image": "/images/achv/icpc.jpg"
-        },
-        {
             "title": "Winner",
             "date": "2024-11",
             "awarder": "Vultr Hackathon, HackCBS",
@@ -169,27 +186,11 @@
             "image": "/images/achv/vultr.png"
         },
         {
-            "title": "Institute-level Hackathon Winner",
-            "date": "2024-10",
-            "awarder": "PSIT",
-            "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
-            "url": "https://erp.psit.ac.in/Document/Verify/PSITKNP1802262A",
-            "image": "/images/achv/PSIT3yrhack.jpg"
-        },
-        {
             "title": "Finalist",
             "date": "2024-11",
             "awarder": "HackIITK Cybersecurity Hackathon",
             "summary": "Competed among 7000+ teams for blockchain based cybersecurity solutions.",
             "image": "/images/achv/hackiitk.png"
-        },
-        {
-            "title": "200+ Active Users, ErpSense Chrome Extension",
-            "date": "Ongoing",
-            "awarder": "Chrome Web Store",
-            "summary": "Successfully published and maintained extension.",
-            "url": "https://chromewebstore.google.com/detail/erpsense-psit/cemfoagomhonpemjnjehciigjieojfao",
-            "image": "/images/achv/erpsense.png"
         },
         {
             "title": "Runner-up",
@@ -213,18 +214,18 @@
             "image": "/images/achv/algoclub.jpg"
         },
         {
-            "title": "Solved 300+ problems",
-            "date": "",
-            "awarder": "LeetCode, CodeChef, HackerRank",
-            "summary": "Across competitive programming and data structure platforms.",
-            "image": "https://zwyx.dev/assets/images/contribution-graph-rotated--5deg-a71e5daa065d8a87b758615f58415fb6.webp"
-        },
-        {
             "title": "Google Arcade Champion",
             "date": "2024-07",
             "awarder": "Google",
             "summary": "Cloud skills",
             "image": "/images/achv/googleArcade.jpg"
+        },
+        {
+            "title": "Solved 300+ problems",
+            "date": "",
+            "awarder": "LeetCode, CodeChef, HackerRank",
+            "summary": "Across competitive programming and data structure platforms.",
+            "image": "https://zwyx.dev/assets/images/contribution-graph-rotated--5deg-a71e5daa065d8a87b758615f58415fb6.webp"
         }
     ],
     "certificates": [
