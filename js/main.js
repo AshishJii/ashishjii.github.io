@@ -38,10 +38,7 @@ function initScrollReveal() {
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
   );
 
-  // Observe all reveal targets
-  document.querySelectorAll(
-    '.reveal, .timeline-item, .pf-card, .skill-group'
-  ).forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
 // ─── Navbar ───────────────────────────────────────────────────────────────────
@@ -89,6 +86,30 @@ function initNavbar() {
   sections.forEach(s => sectionObserver.observe(s));
 }
 
+function initFocusRing() {
+  const selector = 'a, button, [role="tab"]';
+
+  const syncFocusRing = () => {
+    document.querySelectorAll('.focus-ring').forEach(el => el.classList.remove('focus-ring'));
+    const active = document.activeElement;
+    if (active?.matches?.(selector)) active.classList.add('focus-ring');
+  };
+
+  document.addEventListener('focusin', event => {
+    if (event.target.matches?.(selector)) {
+      event.target.classList.add('focus-ring');
+    }
+  });
+
+  document.addEventListener('focusout', event => {
+    event.target.classList?.remove('focus-ring');
+  });
+
+  document.addEventListener('keydown', () => requestAnimationFrame(syncFocusRing));
+  document.addEventListener('keyup', syncFocusRing);
+  document.addEventListener('pointerdown', () => requestAnimationFrame(syncFocusRing));
+}
+
 // ─── Boot ─────────────────────────────────────────────────────────────────────
 async function boot() {
   try {
@@ -104,6 +125,7 @@ async function boot() {
 
     // Initialise all behaviours after DOM is populated
     initNavbar();
+    initFocusRing();
     initScrollReveal();
 
   } catch (err) {

@@ -29,13 +29,6 @@ const SKILL_GROUP_ICONS = {
 export function renderSkills(data, container) {
   const { skills } = data;
 
-  // Build all keywords for ticker
-  const allKeywords = skills.flatMap(s => s.keywords);
-  // Duplicate for seamless loop
-  const tickerTagsHTML = [...allKeywords, ...allKeywords]
-    .map(kw => `<span class="ticker-tag">${kw}</span>`)
-    .join('');
-
   const groupsHTML = skills.map((group, i) => {
     const cfg = SKILL_GROUP_ICONS[group.name] || { svg: '◆', color: 'cyan' };
     const badgesHTML = group.keywords.map(kw => `
@@ -65,12 +58,6 @@ export function renderSkills(data, container) {
           <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
           <p class="section-sub">From low-level system design to AI orchestration — a versatile toolkit across the full engineering stack.</p>
         </header>
-
-        <div class="ticker-wrapper" aria-hidden="true">
-          <div class="ticker-track">
-            ${tickerTagsHTML}
-          </div>
-        </div>
 
         <div class="skills-grid">
           ${groupsHTML}

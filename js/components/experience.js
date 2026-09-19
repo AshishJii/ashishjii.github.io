@@ -30,14 +30,7 @@ function getCompanyAccent(name) {
 }
 
 function getCompanyEmoji(name) {
-  const map = {
-    'rtCamp': '🚀',
-    'Infosys': '🏢',
-    'Strinity Automation': '⚙️',
-    'Freelance': '💻',
-    'PSIT, Kanpur': '🎓'
-  };
-  return map[name] || '🏢';
+  return '';
 }
 
 const WORK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`;
@@ -83,7 +76,7 @@ function buildTimelineItem(job, index, type) {
       <div class="timeline-card">
         <div class="timeline-header">
           <div>
-            <div class="timeline-company">${emoji} ${companyName}</div>
+            <div class="timeline-company">${emoji}${companyName}</div>
             <div class="timeline-role" ${roleStyle}>${roleName}</div>
           </div>
           <div class="timeline-meta">
@@ -132,7 +125,7 @@ export function renderExperience(data, container) {
         </header>
 
         <div class="reveal">
-          <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--cyan); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.1em; display: flex; align-items: center; gap: 10px;">
+          <h3 style="font-size: 0.9rem; color: var(--cyan); margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
             ${WORK_ICON} Professional Experience
           </h3>
           <div class="timeline" style="margin-bottom: 56px;">
@@ -141,7 +134,7 @@ export function renderExperience(data, container) {
         </div>
 
         <div class="reveal">
-          <h3 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--amber); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.1em; display: flex; align-items: center; gap: 10px;">
+          <h3 style="font-size: 0.9rem; color: var(--amber); margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
             ${FREELANCE_ICON} Freelance &amp; Volunteering
           </h3>
           <div class="timeline">

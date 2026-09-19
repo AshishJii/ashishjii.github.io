@@ -44,7 +44,7 @@ export function renderFooter(data, container) {
 
           <!-- Brand / Contact -->
           <div>
-            <div class="footer-brand-name">${basics.name.split(' ')[0]}.dev</div>
+            <div class="footer-brand-name">Ashish.dev</div>
             <p class="footer-brand-desc">
               Full Stack Engineer &amp; Cloud-Native AI specialist. Open to exciting engineering challenges and full-time opportunities.
             </p>

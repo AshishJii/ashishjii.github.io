@@ -18,27 +18,27 @@ const TROPHY_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height
 const CERT_ICON     = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>`;
 
 const AWARD_EMOJIS = {
-  'ICPC':      '🏆',
-  'GATE':      '🎯',
-  'Adobe':     '⚡',
-  'NPTEL':     '⭐',
-  'Vultr':     '🏅',
-  'Winner':    '🏅',
-  'HackIITK': '🔐',
-  '1st place': '🥇',
-  '2nd place': '🥈',
-  'Third':     '🥉',
-  'Runner':    '🥈',
-  'Finalist':  '🎖️',
-  'ErpSense':  '🌐',
-  'Solved':    '💻',
+  'ICPC':      '',
+  'GATE':      '',
+  'Adobe':     '',
+  'NPTEL':     '',
+  'Vultr':     '',
+  'Winner':    '',
+  'HackIITK': '',
+  '1st place': '',
+  '2nd place': '',
+  'Third':     '',
+  'Runner':    '',
+  'Finalist':  '',
+  'ErpSense':  '',
+  'Solved':    '',
 };
 
 function getAwardEmoji(title) {
   for (const [key, emoji] of Object.entries(AWARD_EMOJIS)) {
     if (title.includes(key)) return emoji;
   }
-  return '🎗️';
+  return '';
 }
 
 function formatDate(dateStr) {
@@ -142,7 +142,7 @@ function renderProjectCard(project, i) {
         </div>
       </div>
       <div class="pf-card-body">
-        <h3 class="pf-card-title">${cfg.icon} ${project.name}</h3>
+        <h3 class="pf-card-title">${project.name}</h3>
         <p class="pf-card-desc">${project.description}</p>
         <div class="pf-card-tags">${stackHTML}</div>
       </div>
@@ -162,7 +162,7 @@ function renderAwardCard(award, i) {
         ${hasLink ? `<div class="pf-card-links"><a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a></div>` : ''}
       </div>
       <div class="pf-card-body">
-        <h3 class="pf-card-title">${emoji} ${award.title}</h3>
+        <h3 class="pf-card-title">${award.title}</h3>
         <p class="pf-card-sub">${award.awarder}</p>
         <p class="pf-card-desc">${award.summary}</p>
         ${award.date ? `<div class="pf-card-meta"><span class="pf-card-date">${award.date}</span></div>` : ''}

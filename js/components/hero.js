@@ -15,10 +15,10 @@ const SOCIAL_ICONS = {
 };
 
 const CREDIBILITY_PILLS = [
-  { label: 'ICPC Regionalist #204', color: 'cyan',    icon: '🏆' },
-  { label: 'GATE 2026 AIR 3536',    color: 'emerald', icon: '🎯' },
-  { label: 'Adobe Top 100 Finalist',color: 'violet',  icon: '⚡' },
-  { label: 'NPTEL Discipline Star', color: 'amber',   icon: '⭐' },
+  { label: 'ICPC Regionalist #204', color: 'cyan' },
+  { label: 'GATE 2026 AIR 3536',    color: 'emerald' },
+  { label: 'Adobe Top 100 Finalist',color: 'violet' },
+  { label: 'NPTEL Discipline Star', color: 'amber' },
 ];
 
 export function renderHero(data, container) {
@@ -29,7 +29,7 @@ export function renderHero(data, container) {
 
   const pillsHTML = CREDIBILITY_PILLS.map(p => `
     <span class="hero-pill ${p.color}">
-      ${p.icon} ${p.label}
+      ${p.label}
     </span>
   `).join('');
 
@@ -50,7 +50,6 @@ export function renderHero(data, container) {
       background: linear-gradient(135deg, rgba(34,211,238,0.4), rgba(16,185,129,0.25));
       padding: 3px;
       box-shadow: 0 0 60px rgba(34,211,238,0.2), 0 0 120px rgba(34,211,238,0.07);
-      animation: float 7s ease-in-out infinite;
     }
     .hero-avatar-ring img {
       width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
@@ -94,8 +93,7 @@ export function renderHero(data, container) {
             </div>
 
             <h1 class="hero-name opacity-0 animate-fade-in-up animation-delay-200">
-              <span class="text-gradient-cyan">${basics.name.split(' ')[0]}</span>
-              ${basics.name.split(' ').slice(1).join(' ')}
+              ${basics.name}
             </h1>
 
             <p class="hero-role opacity-0 animate-fade-in-up animation-delay-200">
@@ -132,7 +130,7 @@ export function renderHero(data, container) {
               <img src="./images/main/img_pfp.png" alt="Ashish Verma" loading="eager" />
             </div>
             <div class="hero-avatar-badge">
-              ● Software Engineer @ rtCamp
+              Software Engineer @ rtCamp
             </div>
           </div>
 
