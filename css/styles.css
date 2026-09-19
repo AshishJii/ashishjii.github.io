@@ -61,32 +61,6 @@ img { max-width: 100%; display: block; }
 ::-webkit-scrollbar-thumb:hover { background: var(--cyan-dim); }
 
 /* =========================================================
-   TYPOGRAPHY HELPERS
-   ========================================================= */
-.mono { font-family: var(--font-mono); }
-.text-gradient-cyan {
-  background: linear-gradient(135deg, var(--cyan), var(--emerald));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.text-gradient-violet {
-  background: linear-gradient(135deg, var(--violet), var(--cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* =========================================================
-   GLOW UTILITIES
-   ========================================================= */
-.glow-cyan  { box-shadow: 0 0 20px 0 rgba(34, 211, 238, 0.18); }
-.glow-emerald { box-shadow: 0 0 20px 0 rgba(16, 185, 129, 0.18); }
-.glow-violet  { box-shadow: 0 0 20px 0 rgba(129, 140, 248, 0.18); }
-
-.glow-text-cyan { text-shadow: 0 0 24px rgba(34, 211, 238, 0.5); }
-
-/* =========================================================
    LAYOUT CONTAINERS
    ========================================================= */
 .site-wrapper {
@@ -1007,10 +981,6 @@ section {
 /* =========================================================
    KEYFRAME ANIMATIONS
    ========================================================= */
-@keyframes float {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-24px) scale(1.04); }
-}
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(0.7); }
@@ -1018,14 +988,6 @@ section {
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(32px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes shimmer {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-@keyframes ticker {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }
 
 .animate-fade-in-up {
@@ -1036,46 +998,6 @@ section {
 .animation-delay-300 { animation-delay: 0.3s; }
 .animation-delay-400 { animation-delay: 0.4s; }
 .animation-delay-500 { animation-delay: 0.5s; }
-
-/* =========================================================
-   SKILL TICKER (horizontal scroll strip)
-   ========================================================= */
-.ticker-wrapper {
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
-  margin: 32px 0;
-  padding: 12px 0;
-}
-.ticker-track {
-  display: flex;
-  width: max-content;
-  gap: 12px;
-  animation: ticker 30s linear infinite;
-}
-.ticker-track:hover { animation-play-state: paused; }
-.ticker-tag {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 99px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-2);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-/* =========================================================
-   MISC
-   ========================================================= */
-.divider {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border), transparent);
-  margin: 8px 0;
-}
 
 .location-badge {
   display: inline-flex;

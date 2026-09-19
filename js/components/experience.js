@@ -18,29 +18,12 @@ function formatRange(start, end) {
   return `${s} — ${e}`;
 }
 
-function getCompanyAccent(name) {
-  const map = {
-    'rtCamp': 'cyan',
-    'Infosys': 'violet',
-    'Strinity Automation': 'emerald',
-    'Freelance': 'amber',
-    'PSIT, Kanpur': 'violet'
-  };
-  return map[name] || 'cyan';
-}
-
-function getCompanyEmoji(name) {
-  return '';
-}
-
 const WORK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`;
 const FREELANCE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`;
 
-function buildTimelineItem(job, index, type) {
+function buildTimelineItem(job, type) {
   const isCurrent = !job.endDate;
-  const accent = getCompanyAccent(job.name || job.organization);
   const dateRange = formatRange(job.startDate, job.endDate);
-  const emoji = getCompanyEmoji(job.name || job.organization);
   
   const companyName = job.name || job.organization;
   const roleName = job.position;
@@ -69,14 +52,14 @@ function buildTimelineItem(job, index, type) {
   const roleStyle = type === 'volunteer' ? `style="color: var(--violet)"` : (type === 'freelance' ? `style="color: var(--amber)"` : '');
 
   return `
-    <div class="timeline-item" style="transition-delay: ${index * 0.1}s">
+    <div class="timeline-item">
       <div class="timeline-dot">
         <div class="timeline-dot-inner" ${dotStyle}></div>
       </div>
       <div class="timeline-card">
         <div class="timeline-header">
           <div>
-            <div class="timeline-company">${emoji}${companyName}</div>
+            <div class="timeline-company">${companyName}</div>
             <div class="timeline-role" ${roleStyle}>${roleName}</div>
           </div>
           <div class="timeline-meta">
@@ -104,15 +87,15 @@ export function renderExperience(data, container) {
     if (job.position.toLowerCase().includes('intern') || job.name === 'Infosys' || job.name === 'Strinity Automation') {
       type = 'internship';
     }
-    return buildTimelineItem(job, i, type);
+    return buildTimelineItem(job, type);
   }).join('');
 
   // 2. Freelance & Volunteering
   const freelanceWork = work.filter(w => w.name === 'Freelance');
   const allVol = [...freelanceWork.map(w => ({...w, _type: 'freelance'})), ...volunteer.map(v => ({...v, _type: 'volunteer'}))];
   
-  const volHTML = allVol.map((item, i) => {
-    return buildTimelineItem(item, profWork.length + i, item._type);
+  const volHTML = allVol.map((item) => {
+    return buildTimelineItem(item, item._type);
   }).join('');
 
   container.innerHTML = `

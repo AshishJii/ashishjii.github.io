@@ -1,6 +1,6 @@
 /**
- * skills.js — Grouped badge matrix + animated ticker strip
- * Renders skill groups as cards and a scrolling ticker of all keywords.
+ * skills.js — Grouped badge matrix.
+ * Renders skill groups as cards.
  */
 
 const SKILL_GROUP_ICONS = {
@@ -29,14 +29,14 @@ const SKILL_GROUP_ICONS = {
 export function renderSkills(data, container) {
   const { skills } = data;
 
-  const groupsHTML = skills.map((group, i) => {
+  const groupsHTML = skills.map((group) => {
     const cfg = SKILL_GROUP_ICONS[group.name] || { svg: '◆', color: 'cyan' };
     const badgesHTML = group.keywords.map(kw => `
       <span class="skill-badge">${kw}</span>
     `).join('');
 
     return `
-      <div class="skill-group" style="transition-delay: ${i * 0.1}s" aria-label="${group.name} skills">
+      <div class="skill-group" aria-label="${group.name} skills">
         <div class="skill-group-header">
           <div class="skill-group-icon ${cfg.color}" aria-hidden="true">
             ${cfg.svg}

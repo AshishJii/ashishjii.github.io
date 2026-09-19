@@ -17,30 +17,6 @@ const FOLDER_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height
 const TROPHY_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="18" width="12" height="4"/></svg>`;
 const CERT_ICON     = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>`;
 
-const AWARD_EMOJIS = {
-  'ICPC':      '',
-  'GATE':      '',
-  'Adobe':     '',
-  'NPTEL':     '',
-  'Vultr':     '',
-  'Winner':    '',
-  'HackIITK': '',
-  '1st place': '',
-  '2nd place': '',
-  'Third':     '',
-  'Runner':    '',
-  'Finalist':  '',
-  'ErpSense':  '',
-  'Solved':    '',
-};
-
-function getAwardEmoji(title) {
-  for (const [key, emoji] of Object.entries(AWARD_EMOJIS)) {
-    if (title.includes(key)) return emoji;
-  }
-  return '';
-}
-
 function formatDate(dateStr) {
   if (!dateStr) return '';
   const [year, month] = dateStr.split('-');
@@ -67,41 +43,35 @@ function issuerTag(issuer) {
 }
 
 /**
- * Visual config per project name (icon, accent, badge, tech stack).
+ * Visual config per project name (accent, badge, tech stack).
  * Projects without an entry fall back to a generated default.
  */
 const PROJECT_CONFIG = {
   'IntelliPDF': {
     accent:     'cyan',
-    icon:       '🧠',
     badge:      'Adobe Top 100',
     badgeColor: 'violet',
     stack:      ['Python', 'BERT', 'LangGraph', 'Gemini API', 'Azure TTS', 'Docker', 'Vector DB'],
   },
   'JobHunter': {
     accent: 'emerald',
-    icon:   '💼',
     stack:  ['Spring Boot', 'Hibernate', 'MySQL', 'React', 'JWT', 'RBAC'],
   },
   'EventEasy': {
     accent: 'violet',
-    icon:   '🎟️',
     stack:  ['React Native', 'Node.js', 'JWT', 'QR Codes', 'CSV'],
   },
   'ErpSnap': {
     accent: 'amber',
-    icon:   '⚡',
     stack:  ['Python', 'REST APIs', 'Windows', 'Auto-start'],
   },
   'BreakOut': {
     accent: 'cyan',
-    icon:   '🎮',
     stack:  ['HTML Canvas', 'JavaScript', 'Firebase', 'OOP'],
   },
 };
 
 const DEFAULT_ACCENTS = ['cyan', 'emerald', 'violet', 'amber'];
-const DEFAULT_ICONS   = ['🛠️', '📦', '🔧', '🧩'];
 
 function projectConfigFor(project, i) {
   if (PROJECT_CONFIG[project.name]) return PROJECT_CONFIG[project.name];
@@ -110,7 +80,7 @@ function projectConfigFor(project, i) {
     ? techLine.replace(/^Technology Used:\s*/, '').split(',').map(s => s.trim()).filter(Boolean)
     : [];
   const idx = i % DEFAULT_ACCENTS.length;
-  return { accent: DEFAULT_ACCENTS[idx], icon: DEFAULT_ICONS[idx], stack };
+  return { accent: DEFAULT_ACCENTS[idx], stack };
 }
 
 function buildBadge(label, color) {
@@ -151,7 +121,6 @@ function renderProjectCard(project, i) {
 }
 
 function renderAwardCard(award, i) {
-  const emoji   = getAwardEmoji(award.title);
   const image   = award.image || '';
   const hasLink = !!award.url;
 

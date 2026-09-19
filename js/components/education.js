@@ -22,7 +22,7 @@ export function renderEducation(data, container) {
           <h2 class="section-title">Education &amp; <span>Coursework</span></h2>
         </header>
 
-        <div class="education-card reveal" style="transition-delay: 0.1s">
+        <div class="education-card reveal">
           <div>
             <p class="edu-degree">${edu.studyType}</p>
             <h3 class="edu-institution">${edu.institution}</h3>
