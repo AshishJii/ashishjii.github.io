@@ -44,7 +44,7 @@ export function renderFooter(data, container) {
 
           <!-- Brand / Contact -->
           <div>
-            <div class="footer-brand-name">Ashish.dev</div>
+            <div class="footer-brand-name">Ashishji.is-a.dev</div>
             <p class="footer-brand-desc">
               Full Stack Engineer &amp; Cloud-Native AI specialist. Open to exciting engineering challenges and full-time opportunities.
             </p>
