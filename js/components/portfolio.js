@@ -43,14 +43,12 @@ function issuerTag(issuer) {
 }
 
 /**
- * Visual config per project name (accent, badge, tech stack).
+ * Visual config per project name (accent, tech stack).
  * Projects without an entry fall back to a generated default.
  */
 const PROJECT_CONFIG = {
   'IntelliPDF': {
     accent:     'cyan',
-    badge:      'Adobe Top 100',
-    badgeColor: 'violet',
     stack:      ['Python', 'BERT', 'LangGraph', 'Gemini API', 'Azure TTS', 'Docker', 'Vector DB'],
   },
   'JobHunter': {
@@ -83,29 +81,17 @@ function projectConfigFor(project, i) {
   return { accent: DEFAULT_ACCENTS[idx], stack };
 }
 
-function buildBadge(label, color) {
-  const styles = {
-    violet: 'color:var(--violet);background:rgba(129,140,248,0.12);border-color:rgba(129,140,248,0.3);',
-    cyan:   'color:var(--cyan);background:rgba(34,211,238,0.1);border-color:rgba(34,211,238,0.25);',
-    emerald:'color:var(--emerald);background:rgba(16,185,129,0.1);border-color:rgba(16,185,129,0.25);',
-    amber:  'color:var(--amber);background:rgba(245,158,11,0.1);border-color:rgba(245,158,11,0.25);',
-  };
-  return `<span class="pf-card-badge" style="${styles[color] || styles.cyan}">${label}</span>`;
-}
-
 function renderProjectCard(project, i) {
   const cfg      = projectConfigFor(project, i);
   const image    = project.image || '';
   const githubUrl = project.github || 'https://github.com/AshishJii';
   const liveUrl   = project.url || '';
-  const badge     = cfg.badge ? buildBadge(cfg.badge, cfg.badgeColor) : '';
   const stackHTML = (cfg.stack || []).slice(0, 6).map(t => `<span class="stack-tag">${t}</span>`).join('');
 
   return `
     <article class="pf-card accent-${cfg.accent}" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${project.name}" loading="lazy">
-        ${badge}
         <div class="pf-card-links">
           <a class="pf-card-link" href="${githubUrl}" target="_blank" rel="noopener" aria-label="View ${project.name} on GitHub" title="GitHub">${GITHUB_ICON}</a>
           ${liveUrl ? `<a class="pf-card-link" href="${liveUrl}" target="_blank" rel="noopener" aria-label="${project.name} live demo" title="Live Demo">${EXTERNAL_ICON}</a>` : ''}
