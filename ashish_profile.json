@@ -574,6 +574,18 @@
             ]
         },
         {
+            "name": "PSIT-SIF Website",
+            "description": "Dynamic web platform for PSIT Startup and Incubation Foundation",
+            "github": "https://github.com/AshishJii/PSIT_SIF",
+            "url": "",
+            "image": "https://githubcard.com/ashishjii/PSIT_SIF.svg",
+            "featured": true,
+            "highlights": [
+                "Developed a central web hub using React and Vite for entrepreneurs, features dynamic sections for events, facilities, workshops, and support.",
+                "Engineered interactive showcases for incubated startups and partner organizations to highlight startup achievements and foundation resources."
+            ]
+        },
+        {
             "name": "ErpSnap",
             "description": "Lightweight widget app for one-click access to PSIT ERP data.",
             "github": "https://github.com/AshishJii/ErpSnap",
