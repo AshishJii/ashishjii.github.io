@@ -541,6 +541,7 @@
             "description": "AI-powered PDF insight and podcast generator",
             "github": "https://github.com/AshishJii/IntelliPDF",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/IntelliPDF.svg",
             "featured": true,
             "highlights": [
                 "Built a semantic search pipeline over bulk PDF uploads using BERT embeddings and a vector database, integrating Gemini for insight extraction and Azure TTS for podcast generation.",
@@ -553,6 +554,7 @@
             "description": "Smart job portal with seamless applications and admin management",
             "github": "https://github.com/AshishJii/JobHunter",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/JobHunter.svg",
             "featured": true,
             "highlights": [
                 "Architected a full-stack job portal using Spring Boot, Hibernate, MySQL, and React, supporting 500+ concurrent users with real-time job search and application submission.",
@@ -564,6 +566,7 @@
             "description": "Effortless event management with secure ticketing and automation",
             "github": "https://github.com/AshishJii/EventEasy",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/EventEasy.svg",
             "featured": true,
             "highlights": [
                 "Built a cross-platform React Native app for registration, ticketing, and check-in for 500+ attendees, with QR tickets secured via cryptographic JWTs for forgery-proof authentication.",
@@ -575,6 +578,7 @@
             "description": "Lightweight widget app for one-click access to PSIT ERP data.",
             "github": "https://github.com/AshishJii/ErpSnap",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/erpsnap.svg",
             "featured": true,
             "highlights": [
                 "Built a lightweight Python widget application that fetches the latest PSIT ERP information through API calls, giving users one-click access to updates without opening the full portal.",
@@ -586,6 +590,7 @@
             "description": "Online block-breaker game with multiple modes and live leaderboard",
             "github": "https://github.com/AshishJii/BreakOut",
             "url": "https://ashishjii.github.io/BreakOut",
+            "image": "https://githubcard.com/ashishjii/BreakOut.svg",
             "featured": true,
             "highlights": [
                 "Integrated Firebase for anonymous authentication and real-time score tracking.",
@@ -598,6 +603,7 @@
             "description": "An application-based face recognition system that identifies students and presents their complete data.",
             "github": "https://github.com/AshishJii/PhotoInsight",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/PhotoInsight.svg",
             "featured": false,
             "highlights": [
                 "Developed an app that identifies students from photos and displays their personal details.",
@@ -610,6 +616,7 @@
             "description": "A web based application for students to request and teachers to process attendance corrections.",
             "github": "https://github.com/AshishJii/attendance-portal",
             "url": "",
+            "image": "https://githubcard.com/ashishjii/attendance-portal.svg",
             "featured": false,
             "highlights": [
                 "Created web app using Node.js and MongoDB to eliminate manual processing.",
