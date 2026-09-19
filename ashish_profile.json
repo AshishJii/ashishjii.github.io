@@ -1,0 +1,621 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Ashish Verma",
+        "label": "Software Engineer",
+        "image": "",
+        "email": "ashishverma208004@gmail.com",
+        "phone": "+91-6394909077",
+        "url": "https://ashishji.is-a.dev",
+        "summary": "Software Engineer focused on backend engineering and cloud-native AI integration. Experienced in delivering robust enterprise APIs, automated workflow services, and data processing systems using Java, Python, and modern AI orchestration tools. Strong problem solver passionate about clean architecture, performance optimization, and building reliable end-to-end solutions.",
+        "location": {
+            "city": "Kanpur",
+            "region": "Uttar Pradesh",
+            "countryCode": "IN"
+        },
+        "profiles": [
+            {
+                "network": "Portfolio",
+                "username": "AshishJii",
+                "url": "https://ashishji.is-a.dev/"
+            },
+            {
+                "network": "GitHub",
+                "username": "AshishJii",
+                "url": "https://www.github.com/AshishJii"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "ashishverma-cs",
+                "url": "https://www.linkedin.com/in/ashishverma-cs"
+            },
+            {
+                "network": "Blog",
+                "username": "AshishJii",
+                "url": "https://ashishji.is-a.dev/blog"
+            },
+            {
+                "network": "LeetCode",
+                "username": "ashish-verma",
+                "url": "https://leetcode.com/u/ashish-verma/"
+            },
+            {
+                "network": "CodeChef",
+                "username": "ashdev",
+                "url": "https://www.codechef.com/users/ashdev"
+            },
+            {
+                "network": "HackerRank",
+                "username": "AshishVerma",
+                "url": "https://www.hackerrank.com/profile/AshishVerma/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "rtCamp",
+            "position": "Software Engineer",
+            "startDate": "2026-01",
+            "endDate": "",
+            "summary": "",
+            "highlights": [
+                "Consolidated a multi-subsite CMS into a single scalable platform, redesigning content architecture, metadata handling, and reusable workflows across properties.",
+                "Built a location-aware search feature for large datasets, integrating geolocation APIs, caching, and backend optimizations to support 10,000+ entries with fast filtering and retrieval.",
+                "Designed a document-processing service using LangGraph to automate verification workflows by extracting structured fields, detecting document boundaries, and cropping relevant sections using a multimodal LLM pipeline.",
+                "Delivered CMS enhancements across REST APIs, CLI utilities, scheduled automation, database schema extensions, import workflows, debugging, testing, and admin/frontend interfaces."
+            ]
+        },
+        {
+            "name": "Infosys",
+            "position": "Java Developer",
+            "startDate": "2024-10",
+            "endDate": "2024-12",
+            "summary": "",
+            "highlights": [
+                "Developed and deployed 20+ RESTful API using Spring Boot with focus on system design best practices.",
+                "Applied DevOps practices including containerization and automated testing, supporting thousands of users.",
+                "Secured the system with JWT-based auth and RBAC, integrated MySQL via Hibernate ORM, and built a React frontend for a complete full-stack application.",
+                "Delivered a mentor-led Spring Boot session on short notice to candidates across the country, ensuring uninterrupted learning."
+            ]
+        },
+        {
+            "name": "Freelance",
+            "position": "Freelance Web Developer",
+            "startDate": "",
+            "endDate": "",
+            "summary": "",
+            "highlights": [
+                "Designed and developed custom web-based solutions for clients, from requirement gathering to deployment.",
+                "Built responsive, user-friendly websites focused on performance, accessibility, and maintainability.",
+                "Managed client communication, iterative feedback, and delivery timelines to ensure successful project outcomes."
+            ]
+        },
+        {
+            "name": "Strinity Automation",
+            "position": "Backend Developer Intern",
+            "location": "Kanpur, Uttar Pradesh, India",
+            "startDate": "2024-01",
+            "endDate": "2024-07",
+            "summary": "",
+            "highlights": [
+                "Designed system architecture for MERN backend with JWT authentication, handling 1,000+ daily API requests.",
+                "Implemented DevOps practices for continuous deployment, reducing release cycles by 40%."
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "PSIT, Kanpur",
+            "position": "Srajan Club Technical Head",
+            "startDate": "",
+            "endDate": "",
+            "summary": "",
+            "highlights": [
+                "Led development of EntryPoint project and PSIT SIF website using React & Vite, streamlining workflow by 30%.",
+                "Designed and deployed automated task management services, reducing weekly resolution times by 20 hours.",
+                "Conducted events like Startup Charcha to foster innovation and entrepreneurship, engaging 500+ students."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Dr. A.P.J. Abdul Kalam Technical University",
+            "url": "",
+            "area": "Computer Science and Engineering",
+            "studyType": "Bachelor of Technology (Honours)",
+            "startDate": "2022",
+            "endDate": "2026",
+            "score": "CGPA: 8.89",
+            "courses": [
+                "Database Management System",
+                "Operating Systems",
+                "Data Structures & Algorithms",
+                "Computer Networks",
+                "Software Engineering",
+                "Artificial Intelligence"
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "title": "ICPC Regionalist 2026 - Rank 204",
+            "date": "2026",
+            "awarder": "International Collegiate Programming Contest",
+            "summary": "Achieved rank 204 and was the institute topper.",
+            "url": "https://icpc.global/regionals/finder/2025-26",
+            "featured": true,
+            "image": "/images/achv/icpc.jpg"
+        },
+        {
+            "title": "GATE 2026 - Rank 3536",
+            "date": "2026",
+            "awarder": "Graduate Aptitude Test in Engineering",
+            "summary": "Secured All India Rank 3536 in GATE 2026.",
+            "url": "https://gate2026.iitr.ac.in/scorecard",
+            "featured": true,
+            "image": "/images/achv/gate.png"
+        },
+        {
+            "title": "Top 100 Finalist",
+            "date": "2025-09",
+            "awarder": "Adobe India Hackathon",
+            "summary": "Out of 2.5 lakh participants, presented an AI PDF platform.",
+            "url": "https://unstop.com/certificate-preview/f5e88a3a-dd3c-4eda-9299-9948dc2c6725",
+            "featured": true,
+            "image": "/images/achv/adobe25.png"
+        },
+        {
+            "title": "NPTEL Discipline Star",
+            "date": "2025-12",
+            "awarder": "NPTEL",
+            "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
+            "url": "https://nptel.ac.in/discipline-star",
+            "featured": true,
+            "image": "/images/achv/nptel.jpg"
+        },
+        {
+            "title": "Winner",
+            "date": "2024-11",
+            "awarder": "Vultr Hackathon, HackCBS",
+            "summary": "Won the Vultr Hackathon track at HackCBS.",
+            "url": "https://hackcbs.tech/winners",
+            "featured": true,
+            "image": "/images/achv/vultr.png"
+        },
+        {
+            "title": "Finalist",
+            "date": "2024-11",
+            "awarder": "HackIITK Cybersecurity Hackathon",
+            "summary": "Competed among 7000+ teams for blockchain based cybersecurity solutions.",
+            "url": "https://hackiitk.com/results",
+            "featured": true,
+            "image": "/images/achv/hackiitk.png"
+        },
+        {
+            "title": "1st place in the Institute-level Hackathon",
+            "date": "2024-10",
+            "awarder": "PSIT",
+            "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
+            "url": "https://psit.ac.in/events/hackathon-2024",
+            "featured": true,
+            "image": "/images/achv/PSIT3yrhack.jpg"
+        },
+        {
+            "title": "200+ Active Users, ErpSense Chrome Extension",
+            "date": "Ongoing",
+            "awarder": "Chrome Web Store",
+            "summary": "Successfully published and maintained extension.",
+            "url": "https://chrome.google.com/webstore/search/erpsense",
+            "featured": false,
+            "image": "/images/achv/erpsense.png"
+        },
+        {
+            "title": "Runner-up",
+            "date": "2024-11",
+            "awarder": "TON Ideathon, HackCBS",
+            "summary": "Finished as runner-up in the TON Ideathon at HackCBS.",
+            "url": "https://hackcbs.tech/results",
+            "featured": false,
+            "image": "/images/achv/hackcbs.png"
+        },
+        {
+            "title": "2nd place in the Institute-level Hackathon",
+            "date": "2023-07",
+            "awarder": "PSIT",
+            "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 5000.",
+            "url": "https://psit.ac.in/events/hackathon-2023",
+            "featured": false,
+            "image": "/images/achv/PSIT1yrhack.jpg"
+        },
+        {
+            "title": "Third Place",
+            "date": "2023-06",
+            "awarder": "Algo Club Hackathon 2.0",
+            "summary": "Algorithmic problem-solving competition.",
+            "url": "",
+            "featured": false,
+            "image": "/images/achv/algoclub.jpg"
+        },
+        {
+            "title": "Solved 300+ problems",
+            "date": "",
+            "awarder": "LeetCode, CodeChef, HackerRank",
+            "summary": "Across competitive programming and data structure platforms.",
+            "url": "https://leetcode.com/u/ashish-verma/",
+            "featured": false,
+            "image": "https://picsum.photos/seed/solved-300-problems/600/340"
+        },
+        {
+            "title": "Google Arcade Champion",
+            "date": "",
+            "awarder": "Google",
+            "summary": "Cloud skills",
+            "url": "",
+            "featured": false,
+            "image": "/images/achv/googleArcade.jpg"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Oracle Certified Professional: Java SE 21 Developer",
+            "date": "2025-12",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=648AD377EF37C8850DF175269875B4AEC11B97717F0B1A10D55C0E0EA95033C2",
+            "image": "/images/cert/Oracle Java Professional.png",
+            "featured": true
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
+            "date": "2025-10",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E3FD98CE6B77841C7F7F0B62D874E5AC4A2DAED6BFB9252A0F12DC006AE63CDE",
+            "image": "/images/cert/OCI Developer Professional.png",
+            "featured": true
+        },
+        {
+            "name": "Google Cloud Computing Foundations (Top 1%)",
+            "date": "2024-11",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS131S55170018503943768",
+            "image": "/images/cert/NPTEL Google Cloud Computing Foundations.png",
+            "featured": true
+        },
+        {
+            "name": "Linux Foundation Certified System Administrator (LFCS)",
+            "date": "2025-06",
+            "issuer": "KodeKloud",
+            "url": "https://learn.kodekloud.com/certificate/3fa809c4-8ff8-4949-8772-eb3276e2fecd",
+            "image": "/images/cert/Kodekloud LFCS.png",
+            "featured": true
+        },
+        {
+            "name": "Kubernetes Certification",
+            "date": "2025-04",
+            "issuer": "KodeKloud",
+            "url": "https://learn.kodekloud.com/certificate/5c3ee389-e104-4e52-8062-78c1a5794272",
+            "image": "/images/cert/Kodekloud Kubernetes.png",
+            "featured": true
+        },
+        {
+            "name": "Docker Certification",
+            "date": "2025-03",
+            "issuer": "KodeKloud",
+            "url": "https://learn.kodekloud.com/certificate/5e83fdd5-7a95-478c-ae5e-c511104ee686",
+            "image": "/images/cert/Kodekloud Docker.png",
+            "featured": true
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+            "date": "2025-05",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D481DEB1C0C89DEC4F8DF0B6FC0B3C133DB25624260EF8029ED79CAFDB567565",
+            "image": "/images/cert/OCI AI Foundations Associate.png",
+            "featured": true
+        },
+        {
+            "name": "Data Science for Engineers (Top 2%)",
+            "date": "2025-09",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS101S53870008509117495",
+            "image": "/images/cert/NPTEL DataScience.png",
+            "featured": true
+        },
+        {
+            "name": "Introduction To Internet Of Things (Top 1%)",
+            "date": "2025-05",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS44S44870028004350985",
+            "image": "/images/cert/NPTEL Introduction To Internet Of Things.png",
+            "featured": false
+        },
+        {
+            "name": "Foundation of Cloud IoT Edge ML (Top 5%)",
+            "date": "2025-05",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS75S34870004404350985",
+            "image": "/images/cert/NPTEL Cloud IoT Edge ML.png",
+            "featured": false
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+            "date": "2025-05",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7F473D132A78C85351465ABE10AE98999B3E491D3AE163C2E55A811B728899DC",
+            "image": "/images/cert/OCI Foundations Associate.png",
+            "featured": false
+        },
+        {
+            "name": "Artificial Intelligence Fundamentals",
+            "date": "2025-05",
+            "issuer": "IBM",
+            "url": "https://www.credly.com/badges/0ed0c660-c081-4920-bdd3-38fd144a0fc4",
+            "image": "/images/cert/IBM AI.png",
+            "featured": false
+        },
+        {
+            "name": "NEP 2020 - Student Clubs and Quality Circles",
+            "date": "2025-05",
+            "issuer": "NITTTR Bhopal",
+            "url": "",
+            "image": "/images/cert/NITTTR students club training.png",
+            "featured": false
+        },
+        {
+            "name": "Innovation Ambassador [Advanced]",
+            "date": "2024-12",
+            "issuer": "MoE's Innovation Cell",
+            "url": "",
+            "image": "/images/cert/MoE IA Training.png",
+            "featured": false
+        },
+        {
+            "name": "Data Analytics with Python (Top 5%)",
+            "date": "2024-05",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS20S95900005730417816",
+            "image": "/images/cert/NPTEL DataAnalytics.png",
+            "featured": false
+        },
+        {
+            "name": "Speaking Effectively (Top 1%)",
+            "date": "2024-04",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24HS09S35810001430047746",
+            "image": "/images/cert/NPTEL Speaking Effectively.png",
+            "featured": false
+        },
+        {
+            "name": "Certificate of Merit : Flipkart GRiD 5.0",
+            "date": "2024-01",
+            "issuer": "Unstop",
+            "url": "https://unstop.com/certificate-preview/6ad6a9a0-33bd-4110-abad-0062e86318d6",
+            "image": "/images/cert/Parakh assessment report.png",
+            "featured": false
+        },
+        {
+            "name": "Java Foundations Certification",
+            "date": "",
+            "issuer": "Infosys",
+            "url": "https://infosys.com/certificates/placeholder",
+            "image": "/images/cert/Infosys Java.png",
+            "featured": false
+        },
+        {
+            "name": "Enhancing Soft Skills and Personality (Top 2%)",
+            "date": "2023-04",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23HS30S4390041804074067",
+            "image": "/images/cert/NPTEL SoftSkills.png",
+            "featured": false
+        },
+        {
+            "name": "Introduction to Programming in C (Top 1%)",
+            "date": "2023-03",
+            "issuer": "NPTEL",
+            "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23CS02S4487048603028696",
+            "image": "/images/cert/NPTEL C.png",
+            "featured": false
+        },
+        {
+            "name": "Algorithms on Strings",
+            "date": "2022-11",
+            "issuer": "Coursera",
+            "url": "https://www.coursera.org/account/accomplishments/verify/456FA8C3VJTZ",
+            "image": "/images/cert/Coursera Algorithms on Strings.png",
+            "featured": false
+        },
+        {
+            "name": "Data Structures",
+            "date": "2022-10",
+            "issuer": "Coursera",
+            "url": "https://www.coursera.org/account/accomplishments/verify/PS3ERRFC3WD7",
+            "image": "/images/cert/Coursera Data Structures.png",
+            "featured": false
+        },
+        {
+            "name": "Algorithmic Toolbox",
+            "date": "2022-09",
+            "issuer": "Coursera",
+            "url": "https://www.coursera.org/account/accomplishments/verify/LCKDEFV9RNAL",
+            "image": "/images/cert/Coursera Algorithmic toolbox.png",
+            "featured": false
+        },
+        {
+            "name": "Problem Solving (Basic)",
+            "date": "2020-06",
+            "issuer": "HackerRank",
+            "url": "https://www.hackerrank.com/certificates/20f026d8d604",
+            "image": "/images/cert/Hackerrank ProblemSolving.png",
+            "featured": false
+        },
+        {
+            "name": "Java",
+            "date": "2020-06",
+            "issuer": "HackerRank",
+            "url": "https://www.hackerrank.com/certificates/d05ac0b1ab6b",
+            "image": "/images/cert/Hackerrank Java.png",
+            "featured": false
+        },
+        {
+            "name": "Python Fundamentals",
+            "date": "2020-05",
+            "issuer": "DataCamp",
+            "url": "https://www.datacamp.com/statement-of-accomplishment/track/4a629b1c376f753b61cbf8918d2d39f9f54c1de1",
+            "image": "/images/cert/Datacamp python.png",
+            "featured": false
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "",
+            "keywords": [
+                "Java",
+                "JavaScript",
+                "Bash",
+                "Python",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Libraries & Frameworks",
+            "level": "",
+            "keywords": [
+                "LangChain",
+                "LangGraph",
+                "React (Web/Native)",
+                "Spring Boot",
+                "Node.js",
+                "Express",
+                "Flask"
+            ]
+        },
+        {
+            "name": "Operating Systems & Tools",
+            "level": "",
+            "keywords": [
+                "Linux Administration",
+                "Git",
+                "GitHub",
+                "Docker",
+                "Fedora"
+            ]
+        },
+        {
+            "name": "Cloud/Databases",
+            "level": "",
+            "keywords": [
+                "Cloud Services",
+                "MySQL",
+                "MongoDB",
+                "Oracle Database(SQL)",
+                "Firebase"
+            ]
+        },
+        {
+            "name": "Core Competencies",
+            "level": "",
+            "keywords": [
+                "Community Development",
+                "Teamwork",
+                "Design Thinking",
+                "Problem Solving",
+                "Cloud Architecture"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Professional Working"
+        },
+        {
+            "language": "Hindi",
+            "fluency": "Native or Bilingual"
+        }
+    ],
+    "projects": [
+        {
+            "name": "IntelliPDF",
+            "description": "AI-powered PDF insight and podcast generator",
+            "github": "https://github.com/AshishJii/IntelliPDF",
+            "url": "",
+            "featured": true,
+            "highlights": [
+                "Built a semantic search pipeline over bulk PDF uploads using BERT embeddings and a vector database, integrating Gemini for insight extraction and Azure TTS for podcast generation.",
+                "Deployed the full stack in a single Docker container, cutting setup time by ~70% and ensuring dev-to-prod parity.",
+                "Recognized as a Top 100 Finalist at the Adobe India Hackathon 2025"
+            ]
+        },
+        {
+            "name": "JobHunter",
+            "description": "Smart job portal with seamless applications and admin management",
+            "github": "https://github.com/AshishJii/JobHunter",
+            "url": "",
+            "featured": true,
+            "highlights": [
+                "Architected a full-stack job portal using Spring Boot, Hibernate, MySQL, and React, supporting 500+ concurrent users with real-time job search and application submission.",
+                "Engineered a secure authentication system using JWT and RBAC, enabling tiered access and role-specific permissions while managing 1,000+ recruitment assets efficiently."
+            ]
+        },
+        {
+            "name": "EventEasy",
+            "description": "Effortless event management with secure ticketing and automation",
+            "github": "https://github.com/AshishJii/EventEasy",
+            "url": "",
+            "featured": true,
+            "highlights": [
+                "Built a cross-platform React Native app for registration, ticketing, and check-in for 500+ attendees, with QR tickets secured via cryptographic JWTs for forgery-proof authentication.",
+                "Integrated CSV-based bulk registration for 1,000+ participants, eliminating manual data entry overhead."
+            ]
+        },
+        {
+            "name": "ErpSnap",
+            "description": "Lightweight widget app for one-click access to PSIT ERP data.",
+            "github": "https://github.com/AshishJii/ErpSnap",
+            "url": "",
+            "featured": true,
+            "highlights": [
+                "Built a lightweight Python widget application that fetches the latest PSIT ERP information through API calls, giving users one-click access to updates without opening the full portal.",
+                "Designed it for background operation with real-time updates, smooth login handling, Windows auto-start, minimal dependencies, and a user-friendly experience."
+            ]
+        },
+        {
+            "name": "BreakOut",
+            "description": "Online block-breaker game with multiple modes and live leaderboard",
+            "github": "https://github.com/AshishJii/BreakOut",
+            "url": "https://ashishjii.github.io/BreakOut",
+            "featured": true,
+            "highlights": [
+                "Integrated Firebase for anonymous authentication and real-time score tracking.",
+                "Applied Object-Oriented Programming (OOP) for a modular and maintainable codebase.",
+                "Built using HTML (Canvas), CSS, JavaScript, and Firebase for smooth gameplay and persistence."
+            ]
+        },
+        {
+            "name": "PhotoInsight",
+            "description": "An application-based face recognition system that identifies students and presents their complete data.",
+            "github": "https://github.com/AshishJii/PhotoInsight",
+            "url": "",
+            "featured": false,
+            "highlights": [
+                "Developed an app that identifies students from photos and displays their personal details.",
+                "Retrieves results from university website, presents them, and includes a mechanism for forwarding reCAPTCHA challenges to users for solving.",
+                "Technology Used: Python, Restful APIs, Bootstrap"
+            ]
+        },
+        {
+            "name": "Attendance Rectification Portal",
+            "description": "A web based application for students to request and teachers to process attendance corrections.",
+            "github": "https://github.com/AshishJii/attendance-portal",
+            "url": "",
+            "featured": false,
+            "highlights": [
+                "Created web app using Node.js and MongoDB to eliminate manual processing.",
+                "Implemented intuitive UI design for students and administrators, for efficient submission and resolution of requests.",
+                "Technology Used: Node.js, Expressjs, MongoDB, HTML, CSS, Javascript"
+            ]
+        }
+    ]
+}

@@ -670,13 +670,6 @@ hr {
         }
     }
 
-.img-background {
-    background-image: url('../images/main/img_background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 /********* ScrollReveal *********/
 html.sr .load-hidden {
     visibility: hidden;
