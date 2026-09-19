@@ -84,10 +84,6 @@ export function renderHero(data, container) {
               ${basics.location.city}, ${basics.location.region}, ${basics.location.countryCode}
             </p>
 
-            <div class="hero-eyebrow opacity-0 animate-fade-in-up animation-delay-100">
-              <span class="dot"></span>
-              Available for opportunities
-            </div>
 
             <h1 class="hero-name opacity-0 animate-fade-in-up animation-delay-200">
               ${basics.name}

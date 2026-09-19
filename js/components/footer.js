@@ -23,7 +23,9 @@ export function renderFooter(data, container) {
   const { basics } = data;
   const year = new Date().getFullYear();
 
-  const profilesHTML = basics.profiles.map(p => `
+  const profilesHTML = basics.profiles
+    .filter(p => p.network !== 'Portfolio')
+    .map(p => `
     <li>
       <a href="${p.url}" target="_blank" rel="noopener" aria-label="${p.network}">
         ${SOCIAL_ICONS[p.network] || ''}
