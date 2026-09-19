@@ -142,7 +142,6 @@
             "date": "2026",
             "awarder": "Graduate Aptitude Test in Engineering",
             "summary": "Secured All India Rank 3536 in GATE 2026.",
-            "featured": true,
             "image": "/images/achv/gate.png"
         },
         {
@@ -151,7 +150,6 @@
             "awarder": "Adobe India Hackathon",
             "summary": "Out of 2.5 lakh participants, presented an AI PDF platform.",
             "url": "https://unstop.com/certificate-preview/f5e88a3a-dd3c-4eda-9299-9948dc2c6725",
-            "featured": true,
             "image": "/images/achv/adobe25.png"
         },
         {
@@ -160,7 +158,6 @@
             "awarder": "NPTEL",
             "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
             "url": "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/NPTEL_Stars/NPTEL_DISCIPLINE_STARS/NPTELSS2250105012.jpg",
-            "featured": true,
             "image": "/images/achv/nptel.jpg"
         },
         {
@@ -168,7 +165,6 @@
             "date": "2026",
             "awarder": "International Collegiate Programming Contest",
             "summary": "Achieved rank 204 and was the institute topper.",
-            "featured": true,
             "image": "/images/achv/icpc.jpg"
         },
         {
@@ -176,7 +172,6 @@
             "date": "2024-11",
             "awarder": "Vultr Hackathon, HackCBS",
             "summary": "Won the Vultr Hackathon track at HackCBS.",
-            "featured": true,
             "image": "/images/achv/vultr.png"
         },
         {
@@ -184,7 +179,6 @@
             "date": "2024-11",
             "awarder": "HackIITK Cybersecurity Hackathon",
             "summary": "Competed among 7000+ teams for blockchain based cybersecurity solutions.",
-            "featured": true,
             "image": "/images/achv/hackiitk.png"
         },
         {
@@ -193,7 +187,6 @@
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
             "url": "https://erp.psit.ac.in/Document/Verify/PSITKNP1802262A",
-            "featured": true,
             "image": "/images/achv/PSIT3yrhack.jpg"
         },
         {
@@ -202,7 +195,6 @@
             "awarder": "Chrome Web Store",
             "summary": "Successfully published and maintained extension.",
             "url": "https://chromewebstore.google.com/detail/erpsense-psit/cemfoagomhonpemjnjehciigjieojfao",
-            "featured": false,
             "image": "/images/achv/erpsense.png"
         },
         {
@@ -210,7 +202,6 @@
             "date": "2024-11",
             "awarder": "TON Ideathon, HackCBS",
             "summary": "Finished as runner-up in the TON Ideathon at HackCBS.",
-            "featured": false,
             "image": "/images/achv/hackcbs.png"
         },
         {
@@ -218,7 +209,6 @@
             "date": "2023-07",
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 5000.",
-            "featured": false,
             "image": "/images/achv/PSIT1yrhack.jpg"
         },
         {
@@ -226,7 +216,6 @@
             "date": "2023-06",
             "awarder": "Algo Club Hackathon 2.0",
             "summary": "Algorithmic problem-solving competition.",
-            "featured": false,
             "image": "/images/achv/algoclub.jpg"
         },
         {
@@ -234,7 +223,6 @@
             "date": "",
             "awarder": "LeetCode, CodeChef, HackerRank",
             "summary": "Across competitive programming and data structure platforms.",
-            "featured": false,
             "image": "/images/achv/solved-300-problems.png"
         },
         {
@@ -242,7 +230,6 @@
             "date": "",
             "awarder": "Google",
             "summary": "Cloud skills",
-            "featured": false,
             "image": "/images/achv/googleArcade.jpg"
         }
     ],
@@ -252,205 +239,179 @@
             "date": "2025-12",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=648AD377EF37C8850DF175269875B4AEC11B97717F0B1A10D55C0E0EA95033C2",
-            "image": "/images/cert/Oracle Java Professional.png",
-            "featured": true
+            "image": "/images/cert/Oracle Java Professional.png"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
             "date": "2025-10",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E3FD98CE6B77841C7F7F0B62D874E5AC4A2DAED6BFB9252A0F12DC006AE63CDE",
-            "image": "/images/cert/OCI Developer Professional.png",
-            "featured": true
+            "image": "/images/cert/OCI Developer Professional.png"
         },
         {
             "name": "Google Cloud Computing Foundations (Top 1%)",
             "date": "2024-11",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS131S55170018503943768",
-            "image": "/images/cert/NPTEL Google Cloud Computing Foundations.png",
-            "featured": true
+            "image": "/images/cert/NPTEL Google Cloud Computing Foundations.png"
         },
         {
             "name": "Linux Foundation Certified System Administrator (LFCS)",
             "date": "2025-06",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/3fa809c4-8ff8-4949-8772-eb3276e2fecd",
-            "image": "/images/cert/Kodekloud LFCS.png",
-            "featured": true
+            "image": "/images/cert/Kodekloud LFCS.png"
         },
         {
             "name": "Kubernetes Certification",
             "date": "2025-04",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/5c3ee389-e104-4e52-8062-78c1a5794272",
-            "image": "/images/cert/Kodekloud Kubernetes.png",
-            "featured": true
+            "image": "/images/cert/Kodekloud Kubernetes.png"
         },
         {
             "name": "Docker Certification",
             "date": "2025-03",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/5e83fdd5-7a95-478c-ae5e-c511104ee686",
-            "image": "/images/cert/Kodekloud Docker.png",
-            "featured": true
+            "image": "/images/cert/Kodekloud Docker.png"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
             "date": "2025-05",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D481DEB1C0C89DEC4F8DF0B6FC0B3C133DB25624260EF8029ED79CAFDB567565",
-            "image": "/images/cert/OCI AI Foundations Associate.png",
-            "featured": true
+            "image": "/images/cert/OCI AI Foundations Associate.png"
         },
         {
             "name": "Data Science for Engineers (Top 2%)",
             "date": "2025-09",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS101S53870008509117495",
-            "image": "/images/cert/NPTEL DataScience.png",
-            "featured": true
+            "image": "/images/cert/NPTEL DataScience.png"
         },
         {
             "name": "Introduction To Internet Of Things (Top 1%)",
             "date": "2025-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS44S44870028004350985",
-            "image": "/images/cert/NPTEL Introduction To Internet Of Things.png",
-            "featured": false
+            "image": "/images/cert/NPTEL Introduction To Internet Of Things.png"
         },
         {
             "name": "Foundation of Cloud IoT Edge ML (Top 5%)",
             "date": "2025-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS75S34870004404350985",
-            "image": "/images/cert/NPTEL Cloud IoT Edge ML.png",
-            "featured": false
+            "image": "/images/cert/NPTEL Cloud IoT Edge ML.png"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
             "date": "2025-05",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7F473D132A78C85351465ABE10AE98999B3E491D3AE163C2E55A811B728899DC",
-            "image": "/images/cert/OCI Foundations Associate.png",
-            "featured": false
+            "image": "/images/cert/OCI Foundations Associate.png"
         },
         {
             "name": "Artificial Intelligence Fundamentals",
             "date": "2025-05",
             "issuer": "IBM",
             "url": "https://www.credly.com/badges/0ed0c660-c081-4920-bdd3-38fd144a0fc4",
-            "image": "/images/cert/IBM AI.png",
-            "featured": false
+            "image": "/images/cert/IBM AI.png"
         },
         {
             "name": "NEP 2020 - Student Clubs and Quality Circles",
             "date": "2025-05",
             "issuer": "NITTTR Bhopal",
-            "image": "/images/cert/NITTTR students club training.png",
-            "featured": false
+            "image": "/images/cert/NITTTR students club training.png"
         },
         {
             "name": "Innovation Ambassador [Advanced]",
             "date": "2024-12",
             "issuer": "MoE's Innovation Cell",
-            "image": "/images/cert/MoE IA Training.png",
-            "featured": false
+            "image": "/images/cert/MoE IA Training.png"
         },
         {
             "name": "Data Analytics with Python (Top 5%)",
             "date": "2024-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS20S95900005730417816",
-            "image": "/images/cert/NPTEL DataAnalytics.png",
-            "featured": false
+            "image": "/images/cert/NPTEL DataAnalytics.png"
         },
         {
             "name": "Speaking Effectively (Top 1%)",
             "date": "2024-04",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24HS09S35810001430047746",
-            "image": "/images/cert/NPTEL Speaking Effectively.png",
-            "featured": false
+            "image": "/images/cert/NPTEL Speaking Effectively.png"
         },
         {
             "name": "Certificate of Merit : Flipkart GRiD 5.0",
             "date": "2024-01",
             "issuer": "Unstop",
             "url": "https://unstop.com/certificate-preview/6ad6a9a0-33bd-4110-abad-0062e86318d6",
-            "image": "/images/cert/Parakh assessment report.png",
-            "featured": false
+            "image": "/images/cert/Parakh assessment report.png"
         },
         {
             "name": "Java Foundations Certification",
             "date": "",
             "issuer": "Infosys",
-            "image": "/images/cert/Infosys Java.png",
-            "featured": false
+            "image": "/images/cert/Infosys Java.png"
         },
         {
             "name": "Enhancing Soft Skills and Personality (Top 2%)",
             "date": "2023-04",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23HS30S4390041804074067",
-            "image": "/images/cert/NPTEL SoftSkills.png",
-            "featured": false
+            "image": "/images/cert/NPTEL SoftSkills.png"
         },
         {
             "name": "Introduction to Programming in C (Top 1%)",
             "date": "2023-03",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23CS02S4487048603028696",
-            "image": "/images/cert/NPTEL C.png",
-            "featured": false
+            "image": "/images/cert/NPTEL C.png"
         },
         {
             "name": "Algorithms on Strings",
             "date": "2022-11",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/456FA8C3VJTZ",
-            "image": "/images/cert/Coursera Algorithms on Strings.png",
-            "featured": false
+            "image": "/images/cert/Coursera Algorithms on Strings.png"
         },
         {
             "name": "Data Structures",
             "date": "2022-10",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/PS3ERRFC3WD7",
-            "image": "/images/cert/Coursera Data Structures.png",
-            "featured": false
+            "image": "/images/cert/Coursera Data Structures.png"
         },
         {
             "name": "Algorithmic Toolbox",
             "date": "2022-09",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/LCKDEFV9RNAL",
-            "image": "/images/cert/Coursera Algorithmic toolbox.png",
-            "featured": false
+            "image": "/images/cert/Coursera Algorithmic toolbox.png"
         },
         {
             "name": "Problem Solving (Basic)",
             "date": "2020-06",
             "issuer": "HackerRank",
             "url": "https://www.hackerrank.com/certificates/20f026d8d604",
-            "image": "/images/cert/Hackerrank ProblemSolving.png",
-            "featured": false
+            "image": "/images/cert/Hackerrank ProblemSolving.png"
         },
         {
             "name": "Java",
             "date": "2020-06",
             "issuer": "HackerRank",
             "url": "https://www.hackerrank.com/certificates/d05ac0b1ab6b",
-            "image": "/images/cert/Hackerrank Java.png",
-            "featured": false
+            "image": "/images/cert/Hackerrank Java.png"
         },
         {
             "name": "Python Fundamentals",
             "date": "2020-05",
             "issuer": "DataCamp",
             "url": "https://www.datacamp.com/statement-of-accomplishment/track/4a629b1c376f753b61cbf8918d2d39f9f54c1de1",
-            "image": "/images/cert/Datacamp python.png",
-            "featured": false
+            "image": "/images/cert/Datacamp python.png"
         }
     ],
     "skills": [
@@ -530,7 +491,6 @@
             "github": "https://github.com/AshishJii/IntelliPDF",
             "url": "",
             "image": "https://githubcard.com/ashishjii/IntelliPDF.svg",
-            "featured": true,
             "highlights": [
                 "Built a semantic search pipeline over bulk PDF uploads using BERT embeddings and a vector database, integrating Gemini for insight extraction and Azure TTS for podcast generation.",
                 "Deployed the full stack in a single Docker container, cutting setup time by ~70% and ensuring dev-to-prod parity.",
@@ -543,7 +503,6 @@
             "github": "https://github.com/AshishJii/JobHunter",
             "url": "",
             "image": "https://githubcard.com/ashishjii/JobHunter.svg",
-            "featured": true,
             "highlights": [
                 "Architected a full-stack job portal using Spring Boot, Hibernate, MySQL, and React, supporting 500+ concurrent users with real-time job search and application submission.",
                 "Engineered a secure authentication system using JWT and RBAC, enabling tiered access and role-specific permissions while managing 1,000+ recruitment assets efficiently."
@@ -555,7 +514,6 @@
             "github": "https://github.com/AshishJii/EventEasy",
             "url": "",
             "image": "https://githubcard.com/ashishjii/EventEasy.svg",
-            "featured": true,
             "highlights": [
                 "Built a cross-platform React Native app for registration, ticketing, and check-in for 500+ attendees, with QR tickets secured via cryptographic JWTs for forgery-proof authentication.",
                 "Integrated CSV-based bulk registration for 1,000+ participants, eliminating manual data entry overhead."
@@ -567,7 +525,6 @@
             "github": "https://github.com/AshishJii/PSIT_SIF",
             "url": "",
             "image": "https://githubcard.com/ashishjii/PSIT_SIF.svg",
-            "featured": true,
             "highlights": [
                 "Developed a central web hub using React and Vite for entrepreneurs, features dynamic sections for events, facilities, workshops, and support.",
                 "Engineered interactive showcases for incubated startups and partner organizations to highlight startup achievements and foundation resources."
@@ -579,7 +536,6 @@
             "github": "https://github.com/AshishJii/ErpSnap",
             "url": "",
             "image": "https://githubcard.com/ashishjii/erpsnap.svg",
-            "featured": true,
             "highlights": [
                 "Built a lightweight Python widget application that fetches the latest PSIT ERP information through API calls, giving users one-click access to updates without opening the full portal.",
                 "Designed it for background operation with real-time updates, smooth login handling, Windows auto-start, minimal dependencies, and a user-friendly experience."
@@ -591,7 +547,6 @@
             "github": "https://github.com/AshishJii/BreakOut",
             "url": "https://ashishjii.github.io/BreakOut",
             "image": "https://githubcard.com/ashishjii/BreakOut.svg",
-            "featured": true,
             "highlights": [
                 "Integrated Firebase for anonymous authentication and real-time score tracking.",
                 "Applied Object-Oriented Programming (OOP) for a modular and maintainable codebase.",
@@ -604,7 +559,6 @@
             "github": "https://github.com/AshishJii/PhotoInsight",
             "url": "",
             "image": "https://githubcard.com/ashishjii/PhotoInsight.svg",
-            "featured": false,
             "highlights": [
                 "Developed an app that identifies students from photos and displays their personal details.",
                 "Retrieves results from university website, presents them, and includes a mechanism for forwarding reCAPTCHA challenges to users for solving.",
@@ -617,7 +571,6 @@
             "github": "https://github.com/AshishJii/attendance-portal",
             "url": "",
             "image": "https://githubcard.com/ashishjii/attendance-portal.svg",
-            "featured": false,
             "highlights": [
                 "Created web app using Node.js and MongoDB to eliminate manual processing.",
                 "Implemented intuitive UI design for students and administrators, for efficient submission and resolution of requests.",

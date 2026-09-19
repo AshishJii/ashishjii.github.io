@@ -6,7 +6,6 @@
  * initially, with a "Show More" button revealing the rest.
  *
  * Source of truth: ashish_profile.json → projects[], achievements[], certificates[]
- * Featured items are surfaced first within each panel.
  */
 
 const CARD_LIMIT = 6;
@@ -180,11 +179,6 @@ function showMoreButton(panelId, total) {
   `;
 }
 
-// Featured items surface first within each panel, original order preserved otherwise.
-function byFeaturedFirst(items) {
-  return [...items].sort((a, b) => (b.featured === true ? 1 : 0) - (a.featured === true ? 1 : 0));
-}
-
 function initImageModal(root) {
   let modal = document.getElementById('image-modal');
   if (!modal) {
@@ -253,9 +247,9 @@ function initShowMore(root) {
 }
 
 export function renderPortfolio(data, container) {
-  const projects     = byFeaturedFirst(data.projects);
-  const achievements = byFeaturedFirst(data.achievements || []);
-  const certificates = byFeaturedFirst(data.certificates);
+  const projects     = data.projects || [];
+  const achievements = data.achievements || [];
+  const certificates = data.certificates || [];
 
   const projectsHTML    = projects.map((p, i) => renderProjectCard(p, i)).join('');
   const achievementsHTML = achievements.map((a, i) => renderAwardCard(a, i)).join('');
