@@ -216,7 +216,10 @@ function initTabs(root) {
   // Deep-link support: nav links to #achievements / #projects switch tabs too.
   const applyHash = () => {
     const hash = window.location.hash.replace('#', '');
-    if (hash === 'achievements' || hash === 'projects' || hash === 'certifications') activate(hash);
+    if (hash === 'achievements' || hash === 'projects' || hash === 'certifications') {
+      activate(hash);
+      requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView());
+    }
   };
   window.addEventListener('hashchange', applyHash);
   applyHash();
@@ -245,6 +248,7 @@ export function renderPortfolio(data, container) {
     <section id="projects">
       <div class="site-wrapper">
         <span id="achievements" class="pf-anchor"></span>
+        <span id="certifications" class="pf-anchor"></span>
 
         <header class="section-header reveal">
           <p class="section-eyebrow">Portfolio</p>
