@@ -90,7 +90,7 @@ function renderProjectCard(project, i) {
   return `
     <article class="pf-card accent-${cfg.accent}" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(project.name||'').replace(/"/g, '&quot;')}" data-subtitle="${(project.description||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
-        <img class="pf-card-image" src="${image}" alt="${project.name}" loading="lazy">
+        <img class="pf-card-image" src="${image}" alt="${project.name}" loading="eager">
         <div class="pf-card-links">
           <a class="pf-card-link" href="${githubUrl}" target="_blank" rel="noopener" aria-label="View ${project.name} on GitHub" title="GitHub">${GITHUB_ICON}</a>
           ${liveUrl ? `<a class="pf-card-link" href="${liveUrl}" target="_blank" rel="noopener" aria-label="${project.name} live demo" title="Live Demo">${EXTERNAL_ICON}</a>` : ''}
@@ -112,7 +112,7 @@ function renderAwardCard(award, i) {
   return `
     <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(award.title||'').replace(/"/g, '&quot;')}" data-subtitle="${(award.awarder||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
-        <img class="pf-card-image" src="${image}" alt="${award.title}" loading="lazy">
+        <img class="pf-card-image" src="${image}" alt="${award.title}" loading="eager">
         ${hasLink ? `<div class="pf-card-links">
           <a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a>
         </div>` : ''}
@@ -136,7 +136,7 @@ function renderCertCard(cert, i) {
   return `
     <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(cert.name||'').replace(/"/g, '&quot;')}" data-subtitle="${(cert.issuer||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
-        <img class="pf-card-image" src="${image}" alt="${cert.name}" loading="lazy">
+        <img class="pf-card-image" src="${image}" alt="${cert.name}" loading="eager">
         ${hasLink ? `<div class="pf-card-links">
           <a class="pf-card-link" href="${cert.url}" target="_blank" rel="noopener" title="View certificate">${EXTERNAL_ICON}</a>
         </div>` : ''}
