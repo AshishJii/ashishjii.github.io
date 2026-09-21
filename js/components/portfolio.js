@@ -15,7 +15,6 @@ const GITHUB_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height
 const FOLDER_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`;
 const TROPHY_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="18" width="12" height="4"/></svg>`;
 const CERT_ICON     = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>`;
-const EYE_ICON      = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`;
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -89,7 +88,7 @@ function renderProjectCard(project, i) {
   const stackHTML = (cfg.stack || []).slice(0, 6).map(t => `<span class="stack-tag">${t}</span>`).join('');
 
   return `
-    <article class="pf-card accent-${cfg.accent}" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
+    <article class="pf-card accent-${cfg.accent}" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(project.name||'').replace(/"/g, '&quot;')}" data-subtitle="${(project.description||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${project.name}" loading="lazy">
         <div class="pf-card-links">
@@ -111,12 +110,11 @@ function renderAwardCard(award, i) {
   const hasLink = !!award.url;
 
   return `
-    <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
+    <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(award.title||'').replace(/"/g, '&quot;')}" data-subtitle="${(award.awarder||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${award.title}" loading="lazy">
-        ${(image || hasLink) ? `<div class="pf-card-links">
-          ${image ? `<button class="pf-card-link pf-zoom-btn" data-image="${image}" aria-label="View Image" title="View Image">${EYE_ICON}</button>` : ''}
-          ${hasLink ? `<a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a>` : ''}
+        ${hasLink ? `<div class="pf-card-links">
+          <a class="pf-card-link" href="${award.url}" target="_blank" rel="noopener" title="View">${EXTERNAL_ICON}</a>
         </div>` : ''}
       </div>
       <div class="pf-card-body">
@@ -136,12 +134,11 @@ function renderCertCard(cert, i) {
   const image   = cert.image || '';
 
   return `
-    <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}">
+    <article class="pf-card" ${i >= CARD_LIMIT ? 'hidden' : ''} data-extra="${i >= CARD_LIMIT}" data-image="${image}" data-title="${(cert.name||'').replace(/"/g, '&quot;')}" data-subtitle="${(cert.issuer||'').replace(/"/g, '&quot;')}">
       <div class="pf-card-image-wrap">
         <img class="pf-card-image" src="${image}" alt="${cert.name}" loading="lazy">
-        ${(image || hasLink) ? `<div class="pf-card-links">
-          ${image ? `<button class="pf-card-link pf-zoom-btn" data-image="${image}" aria-label="View Image" title="View Image">${EYE_ICON}</button>` : ''}
-          ${hasLink ? `<a class="pf-card-link" href="${cert.url}" target="_blank" rel="noopener" title="View certificate">${EXTERNAL_ICON}</a>` : ''}
+        ${hasLink ? `<div class="pf-card-links">
+          <a class="pf-card-link" href="${cert.url}" target="_blank" rel="noopener" title="View certificate">${EXTERNAL_ICON}</a>
         </div>` : ''}
       </div>
       <div class="pf-card-body">
@@ -174,20 +171,96 @@ function initImageModal(root) {
       <div class="image-modal-overlay"></div>
       <div class="image-modal-content">
         <button class="image-modal-close" aria-label="Close modal">&times;</button>
+        <button class="image-modal-nav image-modal-prev" aria-label="Previous image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="image-modal-nav image-modal-next" aria-label="Next image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
         <img src="" alt="Zoomed image" />
+        <div class="image-modal-info">
+          <h3 class="image-modal-title"></h3>
+          <p class="image-modal-subtitle"></p>
+        </div>
       </div>
     `;
     document.body.appendChild(modal);
 
-    modal.querySelector('.image-modal-overlay').addEventListener('click', () => modal.classList.remove('active'));
-    modal.querySelector('.image-modal-close').addEventListener('click', () => modal.classList.remove('active'));
+    const closeModal = () => modal.classList.remove('active');
+    modal.querySelector('.image-modal-overlay').addEventListener('click', closeModal);
+    modal.querySelector('.image-modal-close').addEventListener('click', closeModal);
   }
 
-  root.querySelectorAll('.pf-zoom-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const src = btn.dataset.image;
+  const imgEl = modal.querySelector('img');
+  const titleEl = modal.querySelector('.image-modal-title');
+  const subtitleEl = modal.querySelector('.image-modal-subtitle');
+  const prevBtn = modal.querySelector('.image-modal-prev');
+  const nextBtn = modal.querySelector('.image-modal-next');
+  let currentCards = [];
+  let currentIndex = 0;
+
+  function updateModal() {
+    if (currentCards.length === 0) return;
+    const card = currentCards[currentIndex];
+    imgEl.src = card.dataset.image;
+    titleEl.textContent = card.dataset.title || '';
+    subtitleEl.textContent = card.dataset.subtitle || '';
+    
+    prevBtn.style.display = currentCards.length > 1 ? 'flex' : 'none';
+    nextBtn.style.display = currentCards.length > 1 ? 'flex' : 'none';
+  }
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentCards.length > 1) {
+      currentIndex = (currentIndex - 1 + currentCards.length) % currentCards.length;
+      updateModal();
+    }
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentCards.length > 1) {
+      currentIndex = (currentIndex + 1) % currentCards.length;
+      updateModal();
+    }
+  });
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+  modal.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  modal.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    if (modal.classList.contains('active') && currentCards.length > 1) {
+      if (touchEndX < touchStartX - 50) nextBtn.click();
+      if (touchEndX > touchStartX + 50) prevBtn.click();
+    }
+  }
+
+  root.querySelectorAll('.pf-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.pf-card-link')) return;
+      
+      const src = card.dataset.image;
       if (src) {
-        modal.querySelector('img').src = src;
+        // Find all sibling cards with images in the current panel
+        const panel = card.closest('.pf-panel');
+        if (panel) {
+          currentCards = Array.from(panel.querySelectorAll('.pf-card')).filter(c => c.dataset.image);
+          currentIndex = currentCards.indexOf(card);
+          if (currentIndex === -1) currentIndex = 0;
+        } else {
+          currentCards = [card];
+          currentIndex = 0;
+        }
+        
+        updateModal();
         modal.classList.add('active');
       }
     });
