@@ -137,14 +137,14 @@
             "awarder": "NPTEL",
             "summary": "Top-percentile performer across 8 courses in Computer Science and Engineering.",
             "url": "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/NPTEL_Stars/NPTEL_DISCIPLINE_STARS/NPTELSS2250105012.jpg",
-            "image": "/images/achv/nptel.jpg"
+            "image": "/images/achv/nptel.webp"
         },
         {
             "title": "GATE 2026 - Rank 3536",
             "date": "2026",
             "awarder": "Graduate Aptitude Test in Engineering",
             "summary": "Secured All India Rank 3536 in GATE 2026.",
-            "image": "/images/achv/gate.png"
+            "image": "/images/achv/gate.webp"
         },
         {
             "title": "200+ Active Users, ErpSense Chrome Extension",
@@ -152,7 +152,7 @@
             "awarder": "Chrome Web Store",
             "summary": "Successfully published and maintained extension.",
             "url": "https://chromewebstore.google.com/detail/erpsense-psit/cemfoagomhonpemjnjehciigjieojfao",
-            "image": "/images/achv/erpsense.png"
+            "image": "/images/achv/erpsense.webp"
         },
         {
             "title": "Institute-level Hackathon Winner",
@@ -160,7 +160,7 @@
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 10000. (2x hackathon Winner - 2023, 2024).",
             "url": "https://erp.psit.ac.in/Document/Verify/PSITKNP1802262A",
-            "image": "/images/achv/PSIT3yrhack.jpg"
+            "image": "/images/achv/PSIT3yrhack.webp"
         },
 
         {
@@ -168,7 +168,7 @@
             "date": "2026",
             "awarder": "International Collegiate Programming Contest",
             "summary": "Achieved rank 204 and was the institute topper.",
-            "image": "/images/achv/icpc.jpg"
+            "image": "/images/achv/icpc.webp"
         },
         {
             "title": "Top 100 Finalist",
@@ -176,49 +176,49 @@
             "awarder": "Adobe India Hackathon",
             "summary": "Out of 2.5 lakh participants, presented an AI PDF platform.",
             "url": "https://unstop.com/certificate-preview/f5e88a3a-dd3c-4eda-9299-9948dc2c6725",
-            "image": "/images/achv/adobe25.png"
+            "image": "/images/achv/adobe25.webp"
         },
         {
             "title": "Winner",
             "date": "2024-11",
             "awarder": "Vultr Hackathon, HackCBS",
             "summary": "Won the Vultr Hackathon track at HackCBS.",
-            "image": "/images/achv/vultr.png"
+            "image": "/images/achv/vultr.webp"
         },
         {
             "title": "Finalist",
             "date": "2024-11",
             "awarder": "HackIITK Cybersecurity Hackathon",
             "summary": "Competed among 7000+ teams for blockchain based cybersecurity solutions.",
-            "image": "/images/achv/hackiitk.png"
+            "image": "/images/achv/hackiitk.webp"
         },
         {
             "title": "Runner-up",
             "date": "2024-11",
             "awarder": "TON Ideathon, HackCBS",
             "summary": "Finished as runner-up in the TON Ideathon at HackCBS.",
-            "image": "/images/achv/hackcbs.png"
+            "image": "/images/achv/hackcbs.webp"
         },
         {
             "title": "Institute-level Hackathon Winner",
             "date": "2023-07",
             "awarder": "PSIT",
             "summary": "Among 2000+ participants, awarded with Cash Prize of Rs 5000.",
-            "image": "/images/achv/PSIT1yrhack.jpg"
+            "image": "/images/achv/PSIT1yrhack.webp"
         },
         {
             "title": "Third Place",
             "date": "2023-06",
             "awarder": "Algo Club Hackathon 2.0",
             "summary": "Algorithmic problem-solving competition.",
-            "image": "/images/achv/algoclub.jpg"
+            "image": "/images/achv/algoclub.webp"
         },
         {
             "title": "Google Arcade Champion",
             "date": "2024-07",
             "awarder": "Google",
             "summary": "Cloud skills",
-            "image": "/images/achv/googleArcade.jpg"
+            "image": "/images/achv/googleArcade.webp"
         },
         {
             "title": "Solved 300+ problems",
@@ -234,179 +234,193 @@
             "date": "2025-12",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=648AD377EF37C8850DF175269875B4AEC11B97717F0B1A10D55C0E0EA95033C2",
-            "image": "/images/cert/Oracle Java Professional.png"
+            "image": "/images/cert/Oracle Java Professional.webp"
         },
         {
             "name": "Linux Foundation Certified System Administrator (LFCS)",
             "date": "2025-06",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/3fa809c4-8ff8-4949-8772-eb3276e2fecd",
-            "image": "/images/cert/Kodekloud LFCS.png"
+            "image": "/images/cert/Kodekloud LFCS.webp"
         },
         {
             "name": "Google Cloud Computing Foundations (Top 1%)",
             "date": "2024-11",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS131S55170018503943768",
-            "image": "/images/cert/NPTEL Google Cloud Computing Foundations.png"
+            "image": "/images/cert/NPTEL Google Cloud Computing Foundations.webp"
         },
         {
             "name": "Artificial Intelligence Fundamentals",
             "date": "2025-05",
             "issuer": "IBM",
             "url": "https://www.credly.com/badges/0ed0c660-c081-4920-bdd3-38fd144a0fc4",
-            "image": "/images/cert/IBM AI.png"
+            "image": "/images/cert/IBM AI.webp"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
             "date": "2025-10",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E3FD98CE6B77841C7F7F0B62D874E5AC4A2DAED6BFB9252A0F12DC006AE63CDE",
-            "image": "/images/cert/OCI Developer Professional.png"
+            "image": "/images/cert/OCI Developer Professional.webp"
         },
         {
             "name": "Data Science for Engineers (Top 2%)",
             "date": "2025-09",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS101S53870008509117495",
-            "image": "/images/cert/NPTEL DataScience.png"
+            "image": "/images/cert/NPTEL DataScience.webp"
         },
         {
             "name": "Kubernetes Certification",
             "date": "2025-04",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/5c3ee389-e104-4e52-8062-78c1a5794272",
-            "image": "/images/cert/Kodekloud Kubernetes.png"
+            "image": "/images/cert/Kodekloud Kubernetes.webp"
         },
         {
             "name": "Docker Certification",
             "date": "2025-03",
             "issuer": "KodeKloud",
             "url": "https://learn.kodekloud.com/certificate/5e83fdd5-7a95-478c-ae5e-c511104ee686",
-            "image": "/images/cert/Kodekloud Docker.png"
+            "image": "/images/cert/Kodekloud Docker.webp"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
             "date": "2025-05",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D481DEB1C0C89DEC4F8DF0B6FC0B3C133DB25624260EF8029ED79CAFDB567565",
-            "image": "/images/cert/OCI AI Foundations Associate.png"
+            "image": "/images/cert/OCI AI Foundations Associate.webp"
         },
         {
             "name": "Introduction To Internet Of Things (Top 1%)",
             "date": "2025-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS44S44870028004350985",
-            "image": "/images/cert/NPTEL Introduction To Internet Of Things.png"
+            "image": "/images/cert/NPTEL Introduction To Internet Of Things.webp"
         },
         {
             "name": "Foundation of Cloud IoT Edge ML (Top 5%)",
             "date": "2025-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS75S34870004404350985",
-            "image": "/images/cert/NPTEL Cloud IoT Edge ML.png"
+            "image": "/images/cert/NPTEL Cloud IoT Edge ML.webp"
         },
         {
             "name": "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
             "date": "2025-05",
             "issuer": "Oracle",
             "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7F473D132A78C85351465ABE10AE98999B3E491D3AE163C2E55A811B728899DC",
-            "image": "/images/cert/OCI Foundations Associate.png"
+            "image": "/images/cert/OCI Foundations Associate.webp"
         },
         {
             "name": "NEP 2020 - Student Clubs and Quality Circles",
             "date": "2025-05",
             "issuer": "NITTTR Bhopal",
-            "image": "/images/cert/NITTTR students club training.png"
+            "image": "/images/cert/NITTTR students club training.webp"
         },
         {
             "name": "Innovation Ambassador [Advanced]",
             "date": "2024-12",
             "issuer": "MoE's Innovation Cell",
-            "image": "/images/cert/MoE IA Training.png"
+            "image": "/images/cert/MoE IA Training.webp"
         },
         {
             "name": "Data Analytics with Python (Top 5%)",
             "date": "2024-05",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS20S95900005730417816",
-            "image": "/images/cert/NPTEL DataAnalytics.png"
+            "image": "/images/cert/NPTEL DataAnalytics.webp"
         },
         {
             "name": "Speaking Effectively (Top 1%)",
             "date": "2024-04",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL24HS09S35810001430047746",
-            "image": "/images/cert/NPTEL Speaking Effectively.png"
-        },
-        {
-            "name": "Certificate of Merit : Flipkart GRiD 5.0",
-            "date": "2024-01",
-            "issuer": "Unstop",
-            "url": "https://unstop.com/certificate-preview/6ad6a9a0-33bd-4110-abad-0062e86318d6",
-            "image": "/images/cert/Parakh assessment report.png"
+            "image": "/images/cert/NPTEL Speaking Effectively.webp"
         },
         {
             "name": "Java Foundations Certification",
             "date": "2024-08",
             "issuer": "Infosys",
-            "image": "/images/cert/Infosys Java.png"
+            "image": "/images/cert/Infosys Java.webp"
         },
         {
             "name": "Enhancing Soft Skills and Personality (Top 2%)",
             "date": "2023-04",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23HS30S4390041804074067",
-            "image": "/images/cert/NPTEL SoftSkills.png"
+            "image": "/images/cert/NPTEL SoftSkills.webp"
         },
         {
             "name": "Introduction to Programming in C (Top 1%)",
             "date": "2023-03",
             "issuer": "NPTEL",
             "url": "https://nptel.ac.in/noc/E_Certificate/NPTEL23CS02S4487048603028696",
-            "image": "/images/cert/NPTEL C.png"
+            "image": "/images/cert/NPTEL C.webp"
         },
         {
             "name": "Algorithms on Strings",
             "date": "2022-11",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/456FA8C3VJTZ",
-            "image": "/images/cert/Coursera Algorithms on Strings.png"
+            "image": "/images/cert/Coursera Algorithms on Strings.webp"
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+            "date": "2025-10",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7F473D132A78C85351465ABE10AE98999B3E491D3AE163C2E55A811B728899DC",
+            "image": "/images/cert/OCI data science.webp"
         },
         {
             "name": "Data Structures",
             "date": "2022-10",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/PS3ERRFC3WD7",
-            "image": "/images/cert/Coursera Data Structures.png"
+            "image": "/images/cert/Coursera Data Structures.webp"
         },
         {
             "name": "Algorithmic Toolbox",
             "date": "2022-09",
             "issuer": "Coursera",
             "url": "https://www.coursera.org/account/accomplishments/verify/LCKDEFV9RNAL",
-            "image": "/images/cert/Coursera Algorithmic toolbox.png"
+            "image": "/images/cert/Coursera Algorithmic toolbox.webp"
         },
         {
             "name": "Problem Solving (Basic)",
             "date": "2020-06",
             "issuer": "HackerRank",
             "url": "https://www.hackerrank.com/certificates/20f026d8d604",
-            "image": "/images/cert/Hackerrank ProblemSolving.png"
+            "image": "/images/cert/Hackerrank ProblemSolving.webp"
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified Networking Professional",
+            "date": "2025-10",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7F473D132A78C85351465ABE10AE98999B3E491D3AE163C2E55A811B728899DC",
+            "image": "/images/cert/OCI Networking.webp"
         },
         {
             "name": "Java",
             "date": "2020-06",
             "issuer": "HackerRank",
             "url": "https://www.hackerrank.com/certificates/d05ac0b1ab6b",
-            "image": "/images/cert/Hackerrank Java.png"
+            "image": "/images/cert/Hackerrank Java.webp"
         },
         {
             "name": "Python Fundamentals",
             "date": "2020-05",
             "issuer": "DataCamp",
             "url": "https://www.datacamp.com/statement-of-accomplishment/track/4a629b1c376f753b61cbf8918d2d39f9f54c1de1",
-            "image": "/images/cert/Datacamp python.png"
+            "image": "/images/cert/Datacamp python.webp"
+        },
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+            "date": "2025-10",
+            "issuer": "Oracle",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=B16FA6610BF2F6B2BFC7868A35293FAAA079ED4917BF8BD1BFE21BA4E1AF04E7",
+            "image": "/images/cert/OCI Devops Professional.webp"
         }
     ],
     "skills": [
