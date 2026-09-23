@@ -20,8 +20,10 @@ const CREDIBILITY_PILLS = [
 export function renderHero(data, container) {
   const { basics } = data;
   const socials = basics.profiles.filter(p =>
-    ['Blog', 'GitHub', 'LinkedIn'].includes(p.network)
+    ['GitHub', 'LinkedIn'].includes(p.network)
   );
+  const blogProfile = basics.profiles.find(p => p.network === 'Blog');
+  const blogUrl = blogProfile ? blogProfile.url : '#';
 
   const pillsHTML = CREDIBILITY_PILLS.map(p => `
     <span class="hero-pill ${p.color}">
@@ -101,9 +103,9 @@ export function renderHero(data, container) {
             </div>
 
             <div class="hero-actions opacity-0 animate-fade-in-up animation-delay-400">
-              <a href="#projects" class="btn-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                View Projects
+              <a href="${blogUrl}" target="_blank" rel="noopener" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Read Blog
               </a>
               <a href="mailto:${basics.email}" class="btn-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
